@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualiser</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="inputs">
+            <p class="navbtns navbtn1">SIZE OF ARRAY</p>
+            <input type="range" id="inp_arr_size" min="1" max="130">   
+            <!-- <p class="navbtns navbtn2">SPEED OF ALGORITHM</p> -->
+            <p class="navbtns navbtn2">SPEED</p>
+
+            <input type="range" id="speed" min="" max=""> 
+            <button class="genar" id="genarr">Generate Array</button>
+        </div>
+        <div class="header">
+            <h2 class="heading">Sorting Visualiser</h2>
+            <div class="algos">
+                <a id="bubblebtn" class="buthover">BUBBLE</a>
+                <a id="insertionbtn" class="buthover">INSERTION</a>
+                <a id="selectionbtn" class="buthover">SELECTION</a>
+                <!-- <button id="quickbtn" class="buthover">QUICK</button>
+                <button id="mergebtn" class="buthover">MERGE</button> -->
+                <a id="help" class="buthover">HELP</a>
+            </div>
+
+            
+
+        </div>
+   
+    </div>
+ 
+        <div class="sortbtns">
+            <button id="ascending" >ASCENDING</button>
+             <button id="descending" >DESCENDING</button>
+        </div>
+        <div class="guide">
+            <h2 id=instructions>Instructions</h2>
+                <p id="close" class="close"><i class="fa fa-close" style="font-size:36px"></i></p>
+            <ol class="instructions">
+                <li><span class="steps">Step 1.</span>Choose the size of array.</li>
+                <li><span class="steps">Step 2.</span>Adjust the speed of visualization.</li>
+                <li><span class="steps">Step 3.</span>Generate the array.</li>
+                <li><span class="steps">Step 4.</span>Choose the order of sorting.(Ascending/Descending).</li>
+                <li><span class="steps">Step 5.</span>Click the sorting algorithm of your choice.</li>
+            </ol>
+        </div>
+        
+    <div id="lines" class="flex-container"></div>
+    <div class="info-container">
+        <div class="detailscont">
+            <div class="detail">
+                <h3>Best Case Time Complexity</h3>
+                <p class="ans" id="bct"></p>
+            </div>
+            <div class="detail">
+                <h3>Average Case Time Complexity</h3>
+                <p class="ans" id="act">O(n*n)</p>
+            </div>
+            <div class="detail">
+                <h3>Worst Case Time Complexity</h3>
+                <p class="ans" id="wct">O(n*n)</p>
+            </div>
+            <div class="detail">
+                <h3>Auxiliary Space</h3>
+                <p class="ans" id="asp">O(n*n)</p>
+            </div>
+            <div class="detail">
+                <h3>Sorting In Place</h3>
+                <p class="ans" id="inplace">O(n*n)</p>
+            </div>
+            <div class="detail">
+                <h3>Stable</h3>
+                <p class="ans" id="stable">O(n*n)</p>
+            </div>
+        </div>
+
+        <div class="bonuscont">
+            <!-- <div class="detail"> -->
+                <h1 class="bonushead">Bonus</h1>
+                <p class="bonus" id="bonusdet"></p>
+          
+        </div>
+    </div>
+
+    
+    
+</body>
+
+
+
+<script src="./scripts/script.js"></script>
+<script src="./scripts/bubble.js"></script>
+<script src="./scripts/selection.js"></script>
+<script  src="./scripts/insertion.js"></script>
+
+<!-- <script type="text/javascript" src="/scripts/merge.js"></script>
+<script type="text/javascript" src="/scripts/quicksort.js"></script> -->
+</html>
